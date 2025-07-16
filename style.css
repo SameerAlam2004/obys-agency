@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: #0b0b0b;
+    padding: 25vh 10vw;
+    /* text-transform: uppercase; */
+}
+
+#main {
+    position: relative;
+    background-color: #111;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #0b0b0b;
+
+}
+
+.line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.line h2 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    animation-name: anime;
+    /* opacity: 0; */
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes anime {
+
+    0%{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-text-stroke: 1px #fff;
+        color:#fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+      45%{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        -webkit-text-stroke: 1px #fff;
+        color:#fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+          
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        -webkit-text-stroke: 1px #fff;
+        color:transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+      100%{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        -webkit-text-stroke: 1px #fff;
+        color:transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+    }
+    
+
+
+
+
+.line {
+    /* background-color: red; */
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4vw
+}
+
+#line1part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    /* text-align: center; */
+
+}
+
+#line1part1 h5,
+#line1part1 h6 {
+    font-size: 4vw;
+    font-style: italic;
+}
