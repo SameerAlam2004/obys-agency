@@ -2,12 +2,26 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: "Lato", sans-serif;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
+    background-color: #0b0b0b;
+}
+#crsr{
+    height:2.5vw ;
+    width: 2.5vw ;
+    /* background-color:#fff; */
+    position: fixed;
+    z-index: 999;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transform: translateX(-50%) translateY(-50%);
+    
 }
 
 #loader {
@@ -111,4 +125,67 @@ body {
 #line1part1 h6 {
     font-size: 4vw;
     font-style: italic;
+}
+
+#page1 #nav{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+    line-height: 10vh;
+}
+#navpart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#navpart2 h4 {
+    font-size: 1.2vw;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+}
+.hero{
+    /* background-color: red; */
+    width: 70%;
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+     height: fit-content;
+    overflow:hidden;
+    line-height: 7.2vh;
+    position: relative;
+    z-index: 999;
+
+}
+
+.hero:nth-child(2){
+    margin-top: 6vw;
+}
+
+.hero h1{
+    font-size: 6vw;
+    font-weight:600 ;  
+    text-transform: uppercase; 
+    line-height: 14vh;
+   
+    /* background-color: red; */
+
+}
+
+.hero h2 , .hero h3{
+    font-size: 4vw;
+    font-weight: 400;
+    /* line-height: 7.2vh; */
+    text-transform: uppercase;
+    /* background-color: red; */
+}
+
+.hero h2 :hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 700;
+
 }
